@@ -3,5 +3,12 @@
 }
 
 <h1>Welcome to the To Do List!</h1>
-<h3><a href='/categories'>View categories</a></h3>
-<h3><a href='/categories/new'>Add a new category</a></h3>
+<p>@Html.ActionLink("See all items", "Index", "Items")</p> 
+@* ActionLink *@
+@* 2 required parameters; 3rd optional
+"See all items" - Display text for link;
+"Index" - the target action in the controller
+"Items" - specifies the controller we want to route to (name of the controller w/o "Controller" appended) *@
+
+@* <p>@Html.ActionLink("See all items", "Index")</p> *@
+@* If we don't include a 3rd parameter, since this view belongs to "Home", we'd default to "Index" in Home *@
