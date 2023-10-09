@@ -6,8 +6,9 @@ namespace ToDoList.Models
   public class Item
   {
     public string Description { get; set; }
-    public int ItemId { get; set; } // uppercase and syntax name must match what these are called in the database. Primary key (id number) follows [ClassName]Id syntax.
+    public int ItemId { get; set; } 
     public Category Category { get; set; }
     public int CategoryId { get; set; }
+    public List<ItemTag> JoinEntities { get; }
   }
 }
